@@ -63,6 +63,9 @@ cd devverify
 ```bash
 cd frontend
 npm install
+npm install react-router-dom
+npm install next-themes
+
 npm run dev
 ```
 
