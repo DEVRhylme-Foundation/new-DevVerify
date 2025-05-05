@@ -1,54 +1,143 @@
-# React + TypeScript + Vite
+Got it — here’s a polished **README.md** written as if the project **DevVerify** is already developed and running under the **Devrhylme** organization.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+You can just drop this into your repo:
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+````markdown
+# DevVerify
 
-## Expanding the ESLint configuration
+**DevVerify** is an official project by **Devrhylme** that enables employees to verify their certificates using a unique code.  
+By entering the code, employees can view their verified details, including:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Full name  
+- Position  
+- Designation  
+- Time of work  
+- LinkedIn profile  
+- GitHub ID
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 🚀 Live Demo
+
+🌐 [https://devverify.devrhylme.com](https://devverify.devrhylme.com)
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React, TypeScript, Vite  
+- **Backend:** Node.js, Express, TypeScript  
+- **Database:** MongoDB  
+- **Other tools:** Mongoose, Axios, React Router, TailwindCSS
+
+---
+
+## ✨ Features
+
+✅ Verify employee certificates with a secure code  
+✅ Display employee details after successful verification  
+✅ Fast, responsive UI built with React + Vite  
+✅ Backend API built with Express and MongoDB  
+✅ Error handling and loading states for smooth UX
+
+---
+
+## 📸 Screenshots
+
+![Certificate Verification Screen](./screenshots/verification-form.png)  
+*Enter certificate code*
+
+![Employee Details Screen](./screenshots/employee-details.png)  
+*View verified employee details*
+
+---
+
+## 📦 Installation
+
+### Clone the repository
+
+```bash
+git clone https://github.com/devrhylme/devverify.git
+cd devverify
+````
+
+---
+
+### Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Frontend will run at [http://localhost:5173](http://localhost:5173).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### Backend Setup
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+Backend will run at [http://localhost:5000](http://localhost:5000).
+
+Make sure MongoDB is running locally or update the MongoDB connection string in `backend/.env`.
+
+---
+
+## ⚙️ Environment Variables
+
+Create a `.env` file in the backend directory:
+
+```
+MONGO_URI=mongodb://localhost:27017/devverify
+PORT=5000
+```
+
+---
+
+## 📂 Project Structure
+
+```
+devverify/
+├── frontend/  → React + TypeScript + Vite
+├── backend/   → Node.js + Express + TypeScript
+├── README.md
+```
+
+---
+
+## 👥 Contributors
+
+* **Devrhylme Team**
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 💬 Contact
+
+For questions or support, contact us at [support@devrhylme.com](mailto:support@devrhylme.com).
+
+```
+
+---
+
+✅ If you want, I can also help you prepare:
+- `.gitignore`  
+- `package.json`  
+- `.env.example`  
+- or even the **Contributing Guidelines** section.  
+
+Would you like me to help draft any of those? Let me know!
 ```
