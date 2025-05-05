@@ -1,10 +1,3 @@
-Got it — here’s a polished **README.md** written as if the project **DevVerify** is already developed and running under the **Devrhylme** organization.
-
-You can just drop this into your repo:
-
----
-
-````markdown
 # DevVerify
 
 **DevVerify** is an official project by **Devrhylme** that enables employees to verify their certificates using a unique code.  
