@@ -37,6 +37,7 @@ export const mockCertificates = [
             "email": "mailto:ghanshyam2005singh@gmail.com"
         }
     },
+    
     {
         "id": "HH-ED9FF6",
         "candidateName": "Anushka Tiwari",
