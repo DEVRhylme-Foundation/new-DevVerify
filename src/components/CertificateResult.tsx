@@ -58,10 +58,16 @@ export function CertificateResult({
             <h1 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-gray-100">
               {certificate.candidateName}
             </h1>
-            <p className="text-gray-500 dark:text-gray-400">{certificate.collegeName || 'N/A'}</p>
+            <p className="text-gray-500 dark:text-gray-400">{certificate.collegeName }</p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
               <InfoItem label="Certificate Type" value={certificate.certificateType} />
+              {certificate.internshipType && (
+    <div className="space-y-2">
+      <p className="text-sm text-gray-500 dark:text-gray-400">Internship Type</p>
+      <p className="font-medium text-gray-900 dark:text-gray-100">{certificate.internshipType}</p>
+    </div>
+  )}
               <InfoItem label="Certificate ID" value={`#${certificate.id}`} />
               <InfoItem label="Issue Date" value={certificate.issuedDate} />
               <InfoItem
